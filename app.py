@@ -38,6 +38,7 @@ LANGUAGE_OPTIONS = {
     "Español": "es",
     "Français": "fr",
     "Deutsch": "de",
+    "Bahasa Indonesia": "id",
 }
 
 # Add source language options
@@ -50,6 +51,7 @@ SOURCE_LANGUAGE_OPTIONS = {
     "Español": "es",
     "Français": "fr",
     "Deutsch": "de",
+    "Bahasa Indonesia": "id",
     "Auto": "auto",
 }
 
@@ -354,9 +356,9 @@ def translate_all_pages(
     output_doc.save(
         output_path,
         garbage=4,
-        deflate=True,
-        clean=True,
-        linear=True
+        #deflate=True,
+        clean=True
+        #linear=True
     )
     
     return output_doc
